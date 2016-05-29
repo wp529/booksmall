@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    tools:context=".activity.MainActivity">
+
+    <com.pzhu.booksmall.view.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#f00"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:text="name"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_shop_price"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                tools:text="price"
+                android:textColor="#f00"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/cb_add"
+                android:padding="10dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </com.pzhu.booksmall.view.SlidingLayout>
+</RelativeLayout>

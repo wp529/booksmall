@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.pzhu.booksmall.view.NoScrollViewPager
+            android:id="@+id/vp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </com.pzhu.booksmall.view.NoScrollViewPager>
+
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="首页"
+                android:drawableTop="@drawable/home"
+                />
+            <RadioButton
+                android:id="@+id/rb_shop"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="购物车"
+                android:drawableTop="@drawable/shopcar"
+                />
+            <RadioButton
+                android:id="@+id/rb_mine"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="我的中心"
+                android:drawableTop="@drawable/mine"
+                />
+        </RadioGroup>
+</LinearLayout>
